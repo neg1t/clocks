@@ -24,7 +24,7 @@ const Clock = ({
       sec = currentDate.getSeconds() * deg;
     } else {
       const currentDate = moment(new Date()).tz(utc);
-      setTime(currentDate.format('h:mm:ss'))
+      setTime(currentDate.format('H:mm:ss'))
       hour = currentDate.hour() * 30;
       min = currentDate.minute() * deg;
       sec = currentDate.second() * deg;
